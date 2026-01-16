@@ -13,7 +13,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 backdrop-blur-lg bg-slate-950/80 border-b border-slate-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/favicon.ico" alt="Logo" className="w-8 h-8 rounded-lg" />
+            <img src={`${basePath}/favicon.ico`} alt="Logo" className="w-8 h-8 rounded-lg" />
             <h2 className="text-xl font-black bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">MagicMujeres</h2>
           </div>
           <div className="flex gap-6 items-center">
