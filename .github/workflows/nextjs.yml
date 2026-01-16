@@ -32,10 +32,8 @@ jobs:
         run: npm ci
         working-directory: magicmujeres
 
-      - name: Build and export
-        run: |
-          npm run build
-          npm run export
+      - name: Build
+        run: npm run build
         working-directory: magicmujeres
 
       - name: Upload artifact
