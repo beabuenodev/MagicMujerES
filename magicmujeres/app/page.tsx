@@ -1,5 +1,4 @@
 "use client";
-const basePath = "/MagicMujerES";
 
 import { FaTwitter, FaInstagram, FaDiscord, FaTiktok, FaYoutube } from "react-icons/fa";
 
@@ -13,7 +12,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 backdrop-blur-lg bg-slate-950/80 border-b border-slate-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={`${basePath}/favicon.ico`} alt="Logo" className="w-8 h-8 rounded-lg" />
+            <img src="/favicon.ico" alt="Logo" className="w-8 h-8 rounded-lg" />
             <h2 className="text-xl font-black bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">MagicMujeres</h2>
           </div>
           <div className="flex gap-6 items-center">
@@ -31,7 +30,7 @@ export default function Home() {
           {/* Left Content */}
           <div className="flex flex-col justify-center">
             <div className="mb-8">
-              <img src={`${basePath}/favicon.ico`} alt="MagicMujeres Logo" className="w-24 h-24 rounded-lg" />
+              <img src="/favicon.ico" alt="MagicMujeres Logo" className="w-24 h-24 rounded-lg" />
             </div>
             <h1 className="text-5xl md:text-6xl font-black mb-6 pb-4 bg-gradient-to-r from-purple-300 via-pink-300 to-purple-300 bg-clip-text text-transparent tracking-wider">
               MagicMujerES
@@ -50,7 +49,7 @@ export default function Home() {
           </div>
           {/* Right - Character Image - Full height and width */}
           <div className="relative hidden md:flex items-end justify-end -mr-4 sm:-mr-6 lg:-mr-8">
-            <img src={`${basePath}/liliana.png`} alt="Character" className="h-full max-h-[600px] w-auto object-contain object-bottom opacity-70" />
+            <img src="/liliana.png" alt="Character" className="h-full max-h-[600px] w-auto object-contain object-bottom opacity-70" />
           </div>
         </div>
       </section>
@@ -105,7 +104,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="group relative overflow-hidden rounded-lg aspect-square">
-                <img src={`${basePath}/fotoevento${i}.jpg`} alt={`Momento ${i}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                <img src={`/fotoevento${i}.jpg`} alt={`Momento ${i}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
               </div>
             ))}

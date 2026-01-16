@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
-const repo = 'MagicMujerES'
+const isGithubPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig = {
-  output: 'export',
-
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}/`,
-
+  output: "export",
+  basePath: isGithubPages ? "/MagicMujerES" : "",
+  assetPrefix: isGithubPages ? "/MagicMujerES/" : "",
   images: {
     unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
